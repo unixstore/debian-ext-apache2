@@ -1,0 +1,22 @@
+Source: ext-apache2
+Section: admin
+Priority: optional
+Maintainer: z17 Dev <mail@z17.dev>
+Uploaders: z17 Dev <mail@z17.dev>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Homepage: https://pkgstore.gitlab.io
+Vcs-Browser: https://github.com/pkgstore/linux-deb-ext-httpd
+Vcs-Git: https://github.com/pkgstore/linux-deb-ext-httpd.git
+Rules-Requires-Root: no
+
+# -------------------------------------------------------------------------------------------------------------------- #
+# Package: ext-apache2
+# -------------------------------------------------------------------------------------------------------------------- #
+
+Package: ext-apache2
+Architecture: all
+Depends: apache2
+        ,${misc:Depends}
+Description: META-package for install and configure HTTPD
+ META-package for install and configure HTTPD.
